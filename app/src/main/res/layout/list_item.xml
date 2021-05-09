@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout que muestra la vista principal -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_item"
+    android:padding="16dp">
+
+    <!-- ImageView que muestra el icono de nuestra app -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@mipmap/ic_launcher" />
+
+    <!-- LinearLayout que muestra una vista diferente dentro de otra -->
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <!-- TextView la palabra lutti -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lutti"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/miwok_translation" />
+
+        <!-- TextView que muestra la palabra one -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="One"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:id="@+id/default_translation" />
+    </LinearLayout>
+
+
+</LinearLayout>
